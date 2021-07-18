@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOGLE MAPS API</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <script src="./app.js"></script>
+
+</head>
+<body>
+    <h1>Google Maps</h1>
+
+    <form id="frm1">
+        <label for="lat">Lat:</label><br>
+        <input type="text" id="lat" name="lat"><br>
+        <label for="lng">Lng:</label><br>
+        <input type="text" id="lng" name="lng">
+        <br><br>
+        <input type="button" name="locationBtn" value="submit" onclick=retrieveLocation() id="btnSubmit">
+        </input>
+        <br><br>
+        <button type="button" name="gpsBtn" onclick="getLocation()">GPS</button>
+        <br><br>
+        <button type="button" name="bigBenBtn" onclick="getBigBenDistance()">Big Ben</button>
+        <br><br>
+        <button type="button" name="earthCoreBtn" onclick="getEarthCore()">Earth's Core</button>
+        <br><br>
+
+        <p id="result">
+            
+        </p>
+    </form>
+
+    
+
+    <div id="map">
+        
+    </div>
+
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt5AgdASjucLRiVXK5b5T0E3J2V7QWVOQ&callback=initMap"
+    async></script>
+
+
+
+</body>
+</html>
